@@ -7,17 +7,17 @@
 - progresso:: `=round(0/100*100,2)`%
 
 ### Comentários
-> nota:: 
+> nota::  
 > possuo:: nao
 
 ## Ficha
-autor:: [[]]
-colecao:: 
-livroNo:: 
-genero:: [[]]
-midia:: papel
-paginas:: 
-idioma:: pt
-isbn:: 
+autor:: [[]]  
+colecao::  
+livroNo::  
+genero:: [[]]  
+midia:: papel  
+paginas::  
+idioma:: pt  
+isbn::  
 
 ### Resenha
