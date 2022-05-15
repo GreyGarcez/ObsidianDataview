@@ -11,4 +11,3 @@ Basicamente tenho uma pasta chamada "livros" onde registro todos os livros que l
 Here i will have all the queries that I use on my workflow.
 
 Basically I have a folder named "livros" where I save every book I read. Each book is a .md file. My idea is to have the same information we can see on sites like Goodreads, but avoiding the social side that is not in my high interest.
-
