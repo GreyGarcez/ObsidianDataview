@@ -1,23 +1,31 @@
-# <% tp.file.title %>
+---
+title: "{{title}}"
+publisher: {{publisher}}
+publish: {{publishDate}}
+cover: {{coverUrl}}
+status: ler
+rating: 0  
+possuo: false
+created: {{DATE:YYYY-MM-DD HH:mm}}
+---
 
 ## Leitura
-- lista:: lido
-- inicio:: <% tp.date.now("YYYY-MM-DD") %>
-- fim:: 
-- progresso:: `=round(0/100*100,2)`%
-
-### Comentários
-> nota::  
-> possuo:: nao
+inicio:: <% tp.date.now("YYYY-MM-DD") %>  
+fim::   
+progresso:: `=round(0/{{totalPage}}*100,2)`%  
 
 ## Ficha
-autor:: [[]]  
+autor:: [[{{author}}]]  
 colecao::  
 livroNo::  
-genero:: [[]]  
+genero:: {{category}}  
 midia:: papel  
-paginas::  
+paginas::  {{totalPage}}  
 idioma:: pt  
-isbn::  
+isbn:: {{isbn10}}  
+
+![cover|150]({{coverUrl}})
 
 ### Resenha
+
+{{description}}
