@@ -1,0 +1,24 @@
+---
+tags: controlmap
+---
+
+# Biblioteca
+
+## Livros por autor
+
+```dataview
+TABLE rows.file.link as Livro, rows.livroNo as No
+FROM "livros"
+sort livroNo, file.name
+group by list(join(autor), default(colecao,"")) as "Autor/Coleção"
+sort autor, colecao
+```
+
+## Total de livros por autor
+
+```dataview
+TABLE length(rows) as "Livros", sum(rows.paginas) as "Páginas"
+FROM "livros"
+GROUP BY autor as Autor
+sort autor
+```
